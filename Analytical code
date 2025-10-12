@@ -1,12 +1,12 @@
-setwd("C:/Users/.../Projet recherche/Statistiques")
-ob <- read.csv2("obgen.csv")
-obadu <- subset (ob, Age.at.clinical.evaluation >= 18)
+setwd("C:/Users/.../Projet recherche/Statistiques")  
+ob <- read.csv2("obgen.csv")  
+obadu <- subset (ob, Age.at.clinical.evaluation >= 18)  
 
-table(ob$variantpatho, ob$atcdf, deparse.level=2, useNA="always")
-chisq.test(ob$variantpatho, ob$atcdf)
+table(ob$variantpatho, ob$atcdf, deparse.level=2, useNA="always")  
+chisq.test(ob$variantpatho, ob$atcdf)  
 
-table(ob$variantpatho, ob$Obesity.before.6.years, deparse.level=2, useNA="always")
-chisq.test(ob$variantpatho, ob$Obesity.before.6.years)
+table(ob$variantpatho, ob$Obesity.before.6.years, deparse.level=2, useNA="always")  
+chisq.test(ob$variantpatho, ob$Obesity.before.6.years)  
 
 table(ob$variantpatho, ob$Eating.behavior.disorder, deparse.level=2, useNA="always")
 chisq.test(ob$variantpatho, ob$Eating.behavior.disorder)
