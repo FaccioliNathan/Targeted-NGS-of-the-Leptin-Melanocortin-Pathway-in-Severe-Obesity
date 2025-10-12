@@ -1,10 +1,9 @@
-R-studio software (version 2023.03.0+386 using R version 4.2.3)
-
 setwd("C:/Users/.../Projet recherche/Statistiques")
 ob <- read.csv2("obgen.csv")
+obadu <- subset (ob, Age.at.clinical.evaluation >= 18)
 
-table(ob$variantpathor, ob$atcdf, deparse.level=2, useNA="always")
-chisq.test(ob$variantpathor, ob$atcdf)
+table(ob$variantpatho, ob$atcdf, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$atcdf)
 
 table(ob$variantpatho, ob$Obesity.before.6.years, deparse.level=2, useNA="always")
 chisq.test(ob$variantpatho, ob$Obesity.before.6.years)
@@ -40,5 +39,5 @@ table(ob$variantpatho, ob$NAFLD, deparse.level=2, useNA="always")
 chisq.test(ob$variantpatho, ob$NAFLD)
 
 
-table(obadu$variantpathor, obadu$Obesity.before.6.years, deparse.level=2, useNA="always")
-chisq.test(obadu$variantpathor, obadu$Obesity.before.6.years)
+table(obadu$variantpatho, obadu$Obesity.before.6.years, deparse.level=2, useNA="always")
+chisq.test(obadu$variantpatho, obadu$Obesity.before.6.years)
