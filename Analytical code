@@ -1,0 +1,41 @@
+
+
+table(ob$variantpathor, ob$atcdf, deparse.level=2, useNA="always")
+chisq.test(ob$variantpathor, ob$atcdf)
+
+table(ob$variantpatho, ob$Obesity.before.6.years, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$Obesity.before.6.years)
+
+table(ob$variantpatho, ob$Eating.behavior.disorder, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$Eating.behavior.disorder)
+
+table(ob$variantpatho, ob$tbendoc, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$tbendoc)
+
+table(ob$variantpatho, ob$Gonadotropic.deficiency, deparse.level=2, useNA="always")
+fisher.test(ob$variantpatho, ob$Gonadotropic.deficiency)
+
+table(ob$variantpatho, ob$tnd, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$tnd)
+
+table(ob$variantpatho, ob$malfo, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$malfo)
+
+table(ob$variantpatho, ob$compl, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$compl)
+
+table(ob$variantpatho, ob$Type.2.diabetes, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$Type.2.diabetes)
+
+table(ob$variantpatho, ob$Hypertension, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$Hypertension)
+
+table(ob$variantpatho, ob$Obstructive.sleep.apnea, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$Obstructive.sleep.apnea)
+
+table(ob$variantpatho, ob$NAFLD, deparse.level=2, useNA="always")
+chisq.test(ob$variantpatho, ob$NAFLD)
+
+
+table(obadu$variantpathor, obadu$Obesity.before.6.years, deparse.level=2, useNA="always")
+chisq.test(obadu$variantpathor, obadu$Obesity.before.6.years)
