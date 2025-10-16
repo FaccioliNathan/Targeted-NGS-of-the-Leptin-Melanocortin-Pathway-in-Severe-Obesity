@@ -11,7 +11,7 @@ _A contingency table was created beforehand to verify the applicability of the s
 
 
 ob is dataset the in which the csv file obgen.csv containing the raw data of every individual was uploaded.
-obadu is a subset of the data containing the data of only the adults patients.
+obadu is a subset of the data containing the data of only the adults patients (Age ≥ 18 years).
 
 variantpathor: logical variable, 1 = individual carrying at least 1 probable pathogenic variant; 0 = individual carrying no probable pathogenic variant.
 
